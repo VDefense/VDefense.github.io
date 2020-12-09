@@ -1,0 +1,342 @@
+/*primary elements*/
+@font-face {
+    font-family: HearthStoneFont;
+    src: url("../fonts/OPTIBelwe-Medium.otf");
+}
+
+body{
+    background-image: url("../media/maxresdefault.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    font-family: HearthStoneFont, Arial, sans-serif;
+}
+/*header*/
+h1{
+    padding: 30px;
+    color: #E6B34B;
+    text-align: center;
+    font-size: 4rem;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row;
+    color: #E6B34B;
+}
+/*main*/
+main{
+    width: 100%;
+    margin-top: 5%;
+}
+/*footer*/
+/*secondary elements*/
+/*header*/
+nav a{
+    text-decoration: none;
+    width:13%;
+    margin-right: 10%;
+    font-size: 2rem;
+    color: #E6B34B;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #E6B34B;
+    background-color: transparent;
+    padding: 5px;
+}
+nav a:hover{
+    color: silver;
+}
+nav form{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav form select[id='cardType'], nav form select[id='minionType'], nav form input[id='name'], nav form input[id='submit'],input[id='minionAbility']{
+    width: 15%;
+    margin-left: 5%;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+nav form input, nav form select, main button{
+    border-radius: 25px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 15px;
+    border-color: #E6B34B;
+    font-size: 1.5rem;
+}
+nav label{
+    padding-right: 10px;
+    font-size: 2rem;
+}
+
+/*main*/
+main article{
+    background-image: url("../media/hearthstone_box___map_of_azeroth_by_gaiuscassius-d77f4r0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #E6B34B;
+    height: 100%;
+    -webkit-border-image: url("../media/wood_style_border__hearthstone_inspired__by_spangladesh-da2br9a.png") 1 round; /* Safari 3.1-5 */
+    -o-border-image:url("../media/wood_style_border__hearthstone_inspired__by_spangladesh-da2br9a.png") 1 round;
+    border-image-width: 5px;
+    border-radius: 25px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+button:active{
+    outline: none;
+}
+button:focus{
+    outline:0;
+}
+
+select option {
+    letter-spacing: 2px;
+    background: #E6B34B;
+    color: black;
+    border-color: #E6B34B;
+    outline-color: black;
+    border-radius: 5px;
+    text-shadow: 0 1px 0 #E6B34B;
+}
+
+#deckBuilder section#deck{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+#deckBuilder section#deck div{
+    width: 25%;
+}
+/*footer*/
+/*classes and id's*/
+#container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+}
+/*header*/
+#deckClass{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: #E6B34B;
+}
+nav form input[id='submit']{
+    align-self: center;
+}
+/*main*/
+#showCards ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+}
+#showCards ul li{
+    flex: 1;
+    width: 25%;
+}
+
+#showCards>h2,#deckBuilder>h2{
+    font-size:0.8rem;
+}
+
+.next{
+    border: none;
+    background-image: url("../media/Button-Next-256.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: -5%;
+    right: 20%;
+}
+.next:hover{
+    background-color: #E6B34B;
+}
+.previous{
+    border: none;
+    background-image: url("../media/Button-Back-2-512.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: -4%;
+    left: 20%;
+}
+.previous:hover{
+    background-color: #E6B34B;
+}
+#saveDeck{
+    float: right;
+}
+#saveDeck:hover{
+    background-color: #E6B34B;
+}
+aside#showBiggerPicture{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    padding: 5%;
+}
+aside#showBiggerPicture .returnFromBiggerPicture{
+    display: none;
+}
+aside#showBiggerPicture .addToMainDeck{
+    border: 2px solid black;
+    border-radius: 3%;
+    background-color: #E6B34B;
+    color: black;
+}
+
+aside#showBiggerPicture .addToMainDeck:hover{
+    border: 2px solid #E6B34B;
+    border-radius: 3%;
+    background-color: black;
+    color: #E6B34B;
+}
+#deckBuilder div{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#deckBuilder section#deck.removeFromDeck{
+    margin-top: 10px;
+    flex: 1 1 0;
+}
+/*footer*/
+/*media query voor ipad*/
+@media only screen and (max-width: 1030px) {
+    #container{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+        position: static;
+    }
+    body {
+        background-image: url("../media/ab_plasma.jpg");
+        background-size: cover;
+    }
+
+    /*header*/
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+
+    nav {
+        width: 100%;
+        font-size: 4rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /*main*/
+    main{
+        margin-top: 0;
+    }
+    /*footer*/
+    /*secondary elements*/
+    /*header*/
+    nav a{
+        width: 30%;
+        font-size: 2rem;
+        position: absolute;
+        background-color: transparent;
+        text-decoration: underline;
+        top: 12.8%;
+        left: 9%;
+    }
+    nav a:active{
+        color: silver;
+    }
+    nav form{
+        margin-top: 15%;
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+    nav form select[id='cardType'], nav form select[id='minionType'], nav form input[id='name'], nav form input[id='submit'], input[id='minionAbility']{
+        width: 30%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    nav form input[id="mana"]{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    nav label{
+        padding-top: 8px;
+        padding-right: 10px;
+        font-size: 1.5rem;
+        position: relative;
+        top: 11%;
+    }
+    /*main*/
+    main article{
+        border-image-width: 2px;
+        margin-top: 10px;
+        flex-flow: wrap;
+        flex-direction: row;
+    }
+
+    main button{
+        font-size: 1.5rem;
+    }
+    #deckBuilder section#deck div{
+        width: 30%;
+    }
+    /*footer*/
+    /*classes and id's*/
+    /*header*/
+    #deckClass{
+        font-size: 1.5rem;
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        right: 0;
+    }
+    /*main*/
+    .next{
+        bottom: 11%;
+    }
+    .previous{
+        bottom: 11%;
+    }
+    #showCards ul li{
+        width: 30%;
+    }
+    #showCards ul li img{
+        flex: 1;
+        width: 210px;
+    }
+    #deck div img, #deck div button{
+        width: 210px;
+        padding-right: 25px;
+    }
+    /*footer*/
+}
