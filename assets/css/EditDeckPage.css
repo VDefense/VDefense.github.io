@@ -1,0 +1,147 @@
+/*primary elements*/
+@font-face {
+    font-family: HearthStoneFont;
+    src: url("../fonts/OPTIBelwe-Medium.otf");
+}
+body{
+    /*background-image: url("https://i.redd.it/awio0t3vn6fz.jpg");*/
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+    background-color: black;
+    background-size: cover;
+    font-family: HearthStoneFont, Arial, sans-serif;
+}
+/*header*/
+header{
+    background-color: black;
+    padding: 30px;
+    color: #E6B34B;
+    text-align: center;
+    font-size: 4rem;
+}
+header i, header h1{
+    display:inline;
+}
+header i a,header i{
+    text-decoration: none;
+    color:#E6B34B;
+    font-size:1rem;
+}
+/*main*/
+main{
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+}
+/*footer*/
+/*secondary elements*/
+/*header*/
+/*main*/
+main article{
+    flex: 2;
+    text-align: center;
+    margin-top: 0.5%;
+    color: #E6B34B;
+}
+
+main article ul li a{
+    text-decoration: none;
+    color: #E6B34B;
+}
+
+main article h2{
+    margin: 3%;
+    font-size: 2rem;
+}
+/*footer*/
+/*classes and id's*/
+#container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*header*/
+/*main*/
+#possibleClasses ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#possibleClasses ul li{
+    width: 30%;
+}
+#possibleClasses > ul li:nth-child(odd) img{
+    padding-bottom: 25px;
+}
+#possibleClasses ul li img{
+    width: 100%;
+}
+#possibleClasses ul li img[src="assets/media/Warlock.png"]{
+    width: 90%;
+}
+#myVideo{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 720px;
+    padding-top: 220px;
+    top: 0;
+    bottom: 0;
+}
+#innerContainer{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+/*footer*/
+/*media query for tablet modus*/
+
+@media only screen and (max-width: 1030px){
+    /*primary elements*/
+    /*header*/
+    header{
+        padding: 25px;
+    }
+/*classes and id's*/
+/*main*/
+    #possibleClasses ul{
+        justify-content: space-between;
+        width: 100%;
+    }
+    #possibleClasses ul li{
+        width: 35%;
+    }
+    #possibleClasses > ul li:nth-child(odd) img{
+        padding-bottom: 25px;
+    }
+
+    #biggerVersionOfHero{
+        color: #E6B34B;
+        width: 500px;
+        position: absolute;
+        left: 12%;
+        top: 15%;
+    }
+
+    #biggerVersionOfHero a{
+        text-decoration: none;
+        color: #E6B34B;
+        font-size: 1.5rem;
+    }
+
+    #biggerVersionOfHero button{
+        border: double 2px #E6B34B;
+        border-radius: 25px;
+        background-color: black;
+        font-size: 1.5rem;
+        color: #E6B34B;
+    }
+
+    #biggerVersionOfHero button:active{
+        border: double 2px white;
+        background-color: #E6B34B;
+        color: white;
+    }
+
+
+}

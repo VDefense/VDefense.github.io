@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Kelly Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/KellySlab-Regular.ttf");
+}
+
+body{
+    width: 100%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../../assets/media/bg-1920.51.jpg")center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*elements*/
+h1,footer{
+    font-size: 2rem;
+    color:#E6B34B;
+    text-align: center;
+    font-family: "Kelly Slab", sans-serif;
+}
+
+img {
+    max-width: 5.25rem;
+    height:auto;
+}
+div{
+    color:white;
+}
+footer{
+    margin-top:0.2rem;
+    font-size:0.9rem;
+}
+
+
+/*Drag and drop library*/
+#drag-me::before {
+    content: "#" attr(id);
+    font-weight: bold;
+}
+
+#outer-dropzone {
+    height: 8.75rem;
+}
+
+.card {
+    display: inline-block;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    transition: background-color 0.3s;
+}
+
+/*playground*/
+#yourBattlefield, #enemyBattlefield {
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px #000000;
+    border-radius: 4px;
+    padding: 0;
+    width: 50rem;
+    height: 6.25rem;
+    display: flex;
+}
+
+
+#enemyHand,#enemyBattlefield, #yourBattlefield{
+    margin-bottom: 0;
+}
+
+#yourSide, #enemySide{
+    display: flex;
+    justify-content: center;
+
+}
+
+#buttonEnd{
+    position: absolute;
+    left: 85%;
+    top:42%;
+    width: 7.5rem;
+    height: 4.68rem;
+    border-radius: 1.25rem;
+}
+
+#charFriendly, #charEnemy {
+    height: 9.375rem;
+    width: 12.5rem;
+    display: inline;
+    justify-content: flex-end;
+}
+
+#charFriendly img, #charEnemy img,#enemyHeroPowerImg,#yourHeroPowerImg, #enemyWeapon,#yourWeapon,#friendlyHealth,#friendlyArmor,#enemyHealth,#enemyArmor {
+    display:inline;
+}
+
+
+#hero,#enemyHero{
+    width: 12rem;
+    display:block;
+}
+
+
+#enemyMana, #yourMana{
+    height: 6.25rem;
+    width: auto;
+}
+
+#enemyWeapon, #yourWeapon{
+    height: 9.375rem;
+    display:inline;
+    width: 7.5rem;
+}
+
+/*card*/
+.enemyCard .card li , .friendlyCard .card li{
+    width:100%;
+    display:inline-block;
+    list-style-type: none;
+}
+
+.enemyCard .card li p , .friendlyCard .card li p{
+    width:40%;
+    display:block;
+}
+
+.deckBack{
+    height: 7.5rem;
+    width: auto;
+}
+
+.field{
+    border: solid 2px #140000;
+    height: 10.8rem;
+    width: 7.5rem;
+}
+
+#yourBattlefield{
+    height:10.9rem;
+}
+
+#yourHand .cards{
+    width:100%;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+
+    .card{
+        height:3rem;
+        width:5rem;
+    }
+    img{
+        height:auto;
+        width:3.8rem;
+    }
+    .field{
+        height:6.2rem;
+        width:7.2rem;
+    }
+
+    #yourBattlefield{
+        margin-left: auto;
+        margin-right: auto;
+        border: solid 2px #000000;
+        border-radius: 4px;
+        padding: 0;
+        width: 50rem;
+        height: 6.25rem;
+        display: flex;
+    }
+    #enemyBattlefield{
+        height:4rem;
+    }
+    #yourHand, #enemyHand{
+        display:inline-block;
+    }
+    .deckBack{
+        width:2rem;
+        height:2rem;
+    }
+    #charFriendly,#charEnemy{
+        max-height:4rem;
+        width:auto;
+    }
+    #yourWeapon,#enemyWeapon{
+        width:auto;
+        display:inline;
+    }
+    #yourHeroPowerImg ,#enemyHeroPowerImg{
+        height:2rem;
+        display: inline;
+        width:2rem;
+    }
+    #buttonEnd{
+        height: 5rem;
+        border-radius:2rem;
+        width:5rem;
+        position: absolute;
+        left: 90%;
+        top:30%;
+    }
+
+
+
+}
