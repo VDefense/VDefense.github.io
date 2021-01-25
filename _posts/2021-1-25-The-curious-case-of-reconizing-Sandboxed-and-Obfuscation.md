@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The-curious-case-of-reconizing-Sandboxed-and-Obfuscation Lorem Ipsum!
+title: The curious case of reconizing Sandboxes and-Obfuscation in the wild.
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor est non nunc luctus, ut accumsan ante finibus. Aenean sit amet pretium ex, vehicula fringilla lorem. Nunc non varius erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer facilisis aliquet leo eget vulputate. Morbi viverra scelerisque eros. Aenean eget sagittis metus. Aenean aliquam volutpat nisi, ut convallis sem hendrerit non. Nulla id consequat sem. Nam sit amet euismod nunc. Maecenas volutpat quam mi, eu condimentum ante pellentesque ac. Ut ut urna tempus, eleifend purus eget, aliquam turpis. Aenean est sapien, imperdiet eu justo sit amet, porttitor sollicitudin tortor. Nunc est quam, blandit vel vulputate sed, imperdiet sit amet mi. Suspendisse leo magna, consectetur vel semper nec, pretium et sapien.
@@ -13,8 +13,6 @@ Cras aliquam iaculis nibh, ac faucibus libero tempor quis. Phasellus quis malesu
 
 Integer sit amet accumsan dui. Mauris in maximus neque, non dapibus tellus. Ut vehicula odio eget tortor cursus, accumsan posuere ex tincidunt. Praesent sit amet gravida diam. Suspendisse tristique tempor lectus ac bibendum. Cras tincidunt risus eu mauris ullamcorper bibendum. Vestibulum libero odio, interdum vel ante id, condimentum ultrices mi. Curabitur viverra fringilla lacus, in tristique libero tempus vitae. Aliquam ac ligula at lacus ultrices facilisis ac in orci. Etiam facilisis metus nec mauris porttitor, vel commodo ipsum ultricies. Etiam dui diam, pharetra non ipsum vitae, luctus molestie sem. Nunc velit turpis, scelerisque non quam iaculis, blandit condimentum orci. In hac habitasse platea dictumst. Pellentesque libero felis, varius ac aliquet sed, mattis sit amet enim. Cras ligula tellus, volutpat tempus nisi vitae, suscipit faucibus mauris.
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
