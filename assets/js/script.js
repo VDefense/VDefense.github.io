@@ -6,7 +6,7 @@ function alertInfo() {
 }
 
 function alert() {
-    createAlert("Stay tuned for ranked gatherings!", "warning", 4000)
+    createAlert("Stay tuned for info gatherings!", "warning", 4000)
 }
 
 function alertDanger() {
@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("prem").addEventListener("click", alertInfo);
     document.getElementById("successor").addEventListener("click", alertInfo);
     document.querySelector(".col .frame .border").addEventListener("click", alert);
+    document.querySelector(".a").addEventListener("click", alert);
     document.querySelector(".load").addEventListener("click", alertDanger);
     document.querySelector(".set").addEventListener("click", alertDanger);
     document.getElementById("play").style.display = "none";

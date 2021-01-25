@@ -1,6 +1,7 @@
 /*============================================================
     Lala Alert 0.1
     By lalaman
+    Reproduced to E.S. 6 by Fredrik Verriest
 ================================
 
     I only made this because I was bored. But anyway, this alert plugin
