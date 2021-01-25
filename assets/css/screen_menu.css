@@ -47,7 +47,7 @@ strong {
 body {
     color:#E6B34B;
     line-height: 1;
-    background: url('../media/bg-1920.51.jpg') center center;
+    background: url('../media/black-1072366.jpg') center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -167,8 +167,9 @@ section img {
 
 }
 .pimg1{
-    background-image:url("../media/backgroundTavern.jpg");
-    background-size:cover;
+    background-image:url("../media/landscape__15____lake_reflection_by_ncoll36_ddv9g8r.png");
+    background-size: cover;
+    background-position:top;
     background-repeat: no-repeat;
     min-height: 300px;
     display: flex;
